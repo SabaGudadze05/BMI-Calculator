@@ -1,0 +1,264 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/desktop.css" />
+        <link rel="stylesheet" href="./css/tablet.css" />
+        <link rel="stylesheet" href="./css/mobile.css" />
+        <link rel="shortcut icon" href="./imgs/logo.svg" type="image/x-icon" />
+        <title>Bmi-Calculator</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="background_absolute"></div>
+            <!-- section one -->
+            <section class="first_section">
+                <section class="logo_section">
+                    <a href="" class="logo_section_logo_link">
+                        <img
+                            src="./imgs/logo.svg"
+                            alt="logo"
+                            class="logo_section_logo"
+                        />
+                    </a>
+                </section>
+                <section class="first_section_second_section">
+                    <section class="first_section_second_section_text">
+                        <h1 class="first_section_second_section_h1">
+                            Body Mass Index Calculator
+                        </h1>
+                        <p class="first_section_second_section_p">
+                            Better understand your weight in relation to your
+                            height using our body mass index (BM) calculator.
+                            While BMI is not the sole determinant of a healthy
+                            weight, it offers a valuable starting point to
+                            evaluate your overall health and well-being.
+                        </p>
+                    </section>
+                    <section class="bmi_calculator_section">
+                        <h3 class="bmi_calculator_header">
+                            Enter your details below
+                        </h3>
+                        <section class="bmi_checkboxes">
+                            <section class="checkbox">
+                                <button
+                                    class="checkbox_button active"
+                                    id="metric"
+                                ></button>
+                                <p class="checkbox_tittle">Metric</p>
+                            </section>
+                            <section class="checkbox">
+                                <button
+                                    class="checkbox_button"
+                                    id="imperial"
+                                ></button>
+                                <p class="checkbox_tittle">Imperial</p>
+                            </section>
+                        </section>
+                        <section class="input_section" id="metric_section">
+                            <label for="number">
+                                Heigth
+                                <section class="input_and_text_section">
+                                    <input
+                                        type="number"
+                                        name=""
+                                        id="cm"
+                                        class="input"
+                                    />
+                                    <p class="parameters_of_input">cm</p>
+                                </section>
+                            </label>
+                            <label for="number">
+                                Weight
+                                <section class="input_and_text_section">
+                                    <input
+                                        type="number"
+                                        name=""
+                                        id="kg"
+                                        class="input"
+                                    />
+                                    <p class="parameters_of_input">kg</p>
+                                </section>
+                            </label>
+                        </section>
+                        <section
+                            class="input_section imperial hide"
+                            id="imperial_section"
+                        >
+                            <section class="section_imperial">
+                                <label for="number">
+                                    Heigth
+                                    <section class="input_and_text_section">
+                                        <input
+                                            type="number"
+                                            name=""
+                                            id="ft"
+                                            class="input"
+                                        />
+                                        <p class="parameters_of_input">ft</p>
+                                    </section>
+                                </label>
+                                <label for="number">
+                                    <section class="input_and_text_section">
+                                        <input
+                                            type="number"
+                                            name=""
+                                            id="in"
+                                            class="input"
+                                        />
+                                        <p class="parameters_of_input">in</p>
+                                    </section>
+                                </label>
+                            </section>
+                            <section class="section_imperial">
+                                <label for="number">
+                                    Weight
+                                    <section class="input_and_text_section">
+                                        <input
+                                            type="number"
+                                            name=""
+                                            id="st"
+                                            class="input"
+                                        />
+                                        <p class="parameters_of_input">st</p>
+                                    </section>
+                                </label>
+                                <label for="number">
+                                    <section class="input_and_text_section">
+                                        <input
+                                            type="number"
+                                            name=""
+                                            id="lbs"
+                                            class="input"
+                                        />
+                                        <p class="parameters_of_input">lbs</p>
+                                    </section>
+                                </label>
+                            </section>
+                        </section>
+                        <section class="bmi_output_section">
+                            <section class="bmi_side">
+                                <p class="bmi_tittle" id="bmi_tittle">
+                                    Your BMI is...
+                                </p>
+                                <h2
+                                    class="calculated_bmi"
+                                    id="calculation_of_bmi"
+                                >
+                                    00.0
+                                </h2>
+                            </section>
+                            <section class="bmi_suggest_section">
+                                <p class="bmi_suggest" id="suggest">
+                                    Your BMI suggests you’re <span id="span">...</span>
+                                    <!-- Your ideal weight is between
+                                    <span>9st 6lbs - 12st 10lbs.</span> -->
+                                </p>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="sectin_two">
+                <section class="section_two_image_section">
+                    <img
+                        src="./imgs/image-man-eating.webp"
+                        alt=""
+                        class="section_two_image"
+                    />
+                </section>
+                <section class="section_two_desc_section">
+                    <article class="section_two_artice">
+                        <h3 class="section_two_artice_header">
+                            What your BMI result means
+                        </h3>
+                        <p class="section_two_artice_p" id="what_bmi_means">
+                            A BMI in the range of 18.5 to 24.9 is considered a healthy weight. Maintaining a healthy weight can help reduce the risk of chronic health conditions such as heart disease, diabetes, and high blood pressure.
+                        </p>
+                    </article>
+                </section>
+            </section>
+            <section class="section_three">
+                <article class="section_three_article">
+                    <section class="section_three_article_image_section">
+                        <img src="./imgs/icon-eating.svg" alt="" />
+                    </section>
+                    <section class="section_three_article_desc_section">
+                        <h3 class="section_three_article_header">
+                            Healthy eating
+                        </h3>
+                        <p class="section_three_article_p">
+                            Healthy eating promotes weight control, disease
+                            prevention, better digestion, immunity, mental
+                            clarity, and mood.
+                        </p>
+                    </section>
+                </article>
+                <article class="section_three_article">
+                    <section class="section_three_article_image_section">
+                        <img src="./imgs/icon-sleep.svg" alt="" />
+                    </section>
+                    <section class="section_three_article_desc_section">
+                        <h3 class="section_three_article_header">
+                            Adequate sleep
+                        </h3>
+                        <p class="section_three_article_p">
+                            Exercise improves fitness, aids weight control,
+                            elevates mood, and reduces disease risk, fostering
+                            wellness and longevity.
+                        </p>
+                    </section>
+                </article>
+                <article class="section_three_article">
+                    <section class="section_three_article_image_section">
+                        <img src="./imgs/icon-exercise.svg" alt="" />
+                    </section>
+                    <section class="section_three_article_desc_section">
+                        <h3 class="section_three_article_header">
+                            Regular exercise
+                        </h3>
+                        <p class="section_three_article_p">
+                            Sleep enhances mental clarity, emotional stability,
+                            and physical wellness, promoting overall restoration
+                            and rejuvenation.
+                        </p>
+                    </section>
+                </article>
+            </section>
+            <!-- section 4 -->
+            <section class="section_four">
+                <section class="section_four_absolute_section">
+                    <h3 class="section_four_absolute_section_header">
+                        Limitations of BMI
+                    </h3>
+                    <p class="section_four_absolute_section_p">
+                        Although BMI is often a practical indicator of healthy
+                        weight, it is not suited for every person. Specific
+                        groups should carefully consider their BMI outcomes, and
+                        in certain cases, the measurement may not be beneficial
+                        to use.
+                    </p>
+                </section>
+                <section class="section_four_section">
+                    <section class="section_one_article">
+                        <article class="section_four_article">
+                            <section class="gender_section">
+                                <h3 class="gender_section_header">Gender</h3>
+                            </section>
+                            <section class="article_info_section">
+                                <p class="article_info_section_p">
+                                    The development and body fat composition of
+                                    girls and boys vary with age. Consequently,
+                                    a child's age and gender are considered when
+                                    evaluating their BMI.
+                                </p>
+                            </section>
+                        </article>
+                    </section>
+                </section>
+            </section>
+        </div>
+        <script src="./src/main.js"></script>
+    </body>
+</html>
