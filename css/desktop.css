@@ -161,12 +161,12 @@ label {
     outline: none;
 }
 /* css properties of imperial  */
-.section_imperial{
+.section_imperial {
     display: flex;
     align-items: flex-end;
-    gap: 24px   ;
+    gap: 24px;
 }
-.imperial{
+.imperial {
     flex-direction: column;
 }
 
@@ -309,45 +309,6 @@ label {
     font-weight: 400;
     line-height: 24px;
     color: #5e6e85;
-}
-
-/* section 4 */
-
-.section_four {
-    /* width: 80.55556; */
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    margin-top: 216px;
-}
-
-.section_four_absolute_section {
-    position: absolute;
-    width: 48.62%;
-    top: 0;
-    left: 0;
-}
-
-.section_four_absolute_section_header {
-    font-family: "Inter", serif;
-    font-size: 48px;
-    font-weight: 600;
-    line-height: 52.8px;
-    letter-spacing: -0.05em;
-    color: #253347;
-}
-
-.section_four_absolute_section_p {
-    font-family: "Inter", serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #5e6e85;
-}
-.section_four_section {
-    width: 82.84%;
-    height: 100%;
 }
 .hide {
     display: none;

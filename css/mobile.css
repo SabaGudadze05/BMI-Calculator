@@ -1,0 +1,44 @@
+@media (max-width: 481px) {
+    .container {
+        padding: 32px 0 96px;
+    }
+    /* first_section */
+
+    .first_section_second_section {
+        padding-inline: 24px;
+    }
+    .bmi_calculator_section {
+        padding: 24px;
+        gap: 24px;
+    }
+    .input_section {
+        flex-direction: column;
+    }
+    .input_and_text_section {
+        gap: 0;
+    }
+    .bmi_output_section {
+        flex-direction: column;
+        border-radius: 16px;
+    }
+    /* secopnd section */
+    .sectin_two {
+        flex-direction: column;
+        padding: 0;
+        gap: 48px;
+    }
+    .section_two_image_section {
+        width: 100%;
+        height: 354px;
+        flex: auto;
+    }
+    .section_two_desc_section {
+        padding-inline: 24px;
+    }
+    /* section three */
+
+    .section_three {
+        margin-top: 75px;
+        padding: 56px 20px;
+    }
+}

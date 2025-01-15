@@ -49,14 +49,19 @@ function calculateBMI() {
     const weightInKG = Number(metricWeightInput.value);
 
     let metricBmi = 0;
-    if (heightInCM < 0 || weightInKG < 0) {
+    if (heightInCM <= 0 || weightInKG <= 0) {
         const bmiTittle = document.querySelector("#bmi_tittle");
         bmiTittle.innerText = "Please enter valid height and weight values.";
         calculationBMI.innerText = "00.0";
-    } else {
+    } else if (
+        typeof heightInCM === "number" &&
+        typeof weightInKG === "number"
+    ) {
         metricBmi = weightInKG / ((heightInCM / 100) * (heightInCM / 100));
 
         calculationBMI.innerText = String(metricBmi.toFixed(1));
+    } else {
+        calculationBMI.innerText = "00.0";
     }
     bmiDescription(metricBmi);
 }
